@@ -1,14 +1,14 @@
-float fill;
+float fillCol;
 public void setup() {
   size(750,750);
   background(0);
-  fill = 0;
+  fillCol = 0;
 }
 public void draw() {
   fill(0);
-  fill+=0.01;
+  fillCol+=0.01;
   quad(0,0,0,height,width,height,width,0);
-  sierpinski(750,750,width-mouseX,mouseY,fill);
+  sierpinski(750,750,width-mouseX,mouseY,fillCol);
   fill(255);
   text("Size: " + (750-mouseX) + "px",0,30);
   if (mouseY > 2) text("Minimum length: " + mouseY + "px",0,60);
