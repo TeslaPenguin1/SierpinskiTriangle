@@ -16,7 +16,6 @@ public void draw() {
 }
 public void sierpinski(float x, float y, float len, float min, float col) {
   if (min < 5) min = 5;
-  System.out.println(min);
   if (len < min) { 
     fill(HSBtoRGB(col, 1, 1));
     triangle(x,y,x-len,y,x-len/2.0,(float)(y-len*Math.sqrt(3)/2.0));
